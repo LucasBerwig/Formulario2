@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sistema.css">
+    <title>SISTEMA DE GESTÃO ACADÉMICA</title>
+</head>
+<body>
+    <h1>SISTEMA DE GESTÃO ACADÉMICA</h1>
+    <h2>MANUTENÇÃO DE USUÁRIOS DO SISTEMA INTERNO</h2>
+    <form>
+        <div class="row">
+            <label for="login">Login:</label>
+            <input type="text" id="login" name="login">
+        </div>
+        <div class="row">
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha">
+        </div>
+        <div class="row">
+            <label for="status">Status:</label>
+            <select id="status" name="status">
+                <option value="inativo">Inativo</option>
+                <option value="ativo">Ativo</option>
+            </select>
+        </div>
+        <div class="row">
+            <label for="tipo">Tipo:</label>
+            <select id="tipo" name="tipo">
+                <option value="tecnico">Técnico</option>
+                <option value="professor">Professor</option>
+                <option value="aluno">Aluno</option>
+            </select>
+        </div>
+        <div class="row">
+            <label for="data-criacao">Data Criação:</label>
+            <input type="date" id="data-criacao" name="data-criacao">
+        </div>
+        <div class="row">
+            <label for="perfil">Perfil:</label>
+            <select id="perfil" name="perfil">
+                <option value="convidado">Convidado</option>
+                <option value="administrador">Administrador</option>
+            </select>
+        </div>
+        <div class="row">
+            <label for="observacoes">Observações:</label>
+            <textarea id="observacoes" name="observacoes"></textarea>
+        </div>
+        <div class="row">
+            <label for="modulos">Módulos:</label>
+            <select id="modulos" name="modulos" multiple>
+                <option value="cadastrar">Cadastrar</option>
+                <option value="excluir">Excluir</option>
+                <option value="compras">Compras</option>
+                <option value="biblioteca">Biblioteca</option>
+                <option value="academico">Académico</option>
+                <option value="documentacao">Documentação</option>
+                <option value="recursos-humanos">Recursos Humanos</option>
+            </select>
+        </div>
+        <div class="row">
+            <input type="button" value="Cadastrar">
+            <input type="button" value="Excluir">
+        </div>
+    </form>
+</body>
+</html>
